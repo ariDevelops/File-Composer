@@ -14,7 +14,27 @@ you will set they as templates for new ones..
 In future versions I plan to include dependency management for 
 different programming languages...
 
-### Prerequisite
+## INSTALLATION
+~~~ shell 
+  ./Preinst.sh
+  ./Build
+  ./Build test
+  ./Build install
+~~~
+
+ory ou can try installing this program directly from 
+cpan(easy way) instead of source code:
+
+~~~shell
+cpan -i App::FileComposer
+~~~
+
+obs: 
+In case you forgot to run Preinst.sh run:
+$ mkscript --reconf 
+
+
+### DEPENDENCIES
 
 If the installation fails due to lack of internal module dependencies
 you can try to install moose framework through your package manager:
@@ -34,17 +54,7 @@ or
  cpan -i Moose Carp Term::ANSIColor
 ~~~
 
-## INSTALLATION
-~~~ shell 
-  ./Preinst.sh
-  ./Build
-  ./Build test
-  ./Build install
-~~~
 
-obs: 
-In case you forgot to run Preinst.sh run:
-$ mkscript --reconf 
 
 ## SUPPORT AND DOCUMENTATION
 
