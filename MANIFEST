@@ -14,3 +14,4 @@ t/trap-error.t
 xt/boilerplate.t
 META.yml
 META.json
+Preinst.sh

@@ -25,7 +25,7 @@ you can try to install moose framework through your package manager:
  sudo apt-get upgrade
  sudo apt-get install -y perl
  sudo apt install libmoose-perl
-~~	
+~~~	
 
 or 
 
@@ -35,11 +35,12 @@ or
 ~~~
 
 ## INSTALLATION
-
-  ./Preinst
+~~~ shell 
+  ./Preinst.sh
   ./Build
   ./Build test
   ./Build install
+~~~
 
 obs: 
 In case you forgot to run Preinst.sh run:
