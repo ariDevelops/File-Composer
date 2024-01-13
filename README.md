@@ -1,40 +1,32 @@
-# mkscript
-script and source code file manager
+![fcengine](https://github.com/ariDevelops/File-Composer/assets/101485612/9299a0b2-2047-40ab-9903-6299deb19226)
 
-## Introduction
+### creates simple predefined templates from a target directory
 
-I wrote this program with intention of making life easier for programmers 
-who work with many languages and technologies and often forget the
+## Description
+
+
+mkscript is an easy, lightweight, and simple Template engine
+written in Perl, it is easy to customize it by putting your
+own templates inside the engine directory.
+
+In case the directory does not exist, there are options 
+to generate one, or create the new one by hand. 
+
+I wrote this program intending to make
+life easier for programmers who work with many 
+languages and technologies and often forget the
 unique syntax of each one.
 
-after installing it you can put your scripts inside /yourhome/user/.app-filecomposer
-you will set they as templates for new ones..
+## SYNOPSIS
+![mkscript_usage](https://github.com/ariDevelops/File-Composer/assets/101485612/f30ee787-6616-495d-b47c-4708883ee5b2)
+
 
 ## NOTE
-In future versions I plan to include dependency management for 
+In future versions, I plan to include dependency management for 
 different programming languages...
 
-### Prerequisite
-
-If the installation fails due to lack of internal module dependencies
-you can try to install moose framework through your package manager:
-
-**Debian/Ubuntu** 
-~~~shell
- sudo apt-get update
- sudo apt-get upgrade
- sudo apt-get install -y perl
- sudo apt install libmoose-perl
-~~~	
-
-or 
-
-**from CPAN client**
-~~~ shell
- cpan -i Moose Carp Term::ANSIColor
-~~~
-
-## INSTALLATION
+## INSTALLATION 
+### from git repo
 ~~~ shell 
   ./Preinst.sh
   ./Build
@@ -46,15 +38,30 @@ obs:
 In case you forgot to run Preinst.sh run:
 $ mkscript --reconf 
 
+### from cpan 
+~~~ shell
+   sudo cpan -i App::Filecomposer
+~~~
+
+
 ## SUPPORT AND DOCUMENTATION
 
-After installing, you can find documentation for this module with the
-perldoc or man command.
+#### After installation, the tool creates a hidden directory in which you can store the template files you want to use:
+![Captura de tela de 2024-01-13 20-32-59](https://github.com/ariDevelops/File-Composer/assets/101485612/bff541c4-ca6f-42cc-a7ef-f80f45eb4cbc)
 
-    perldoc App::FileComposer (for use module)
-                or
-    perldoc mkscript (for use CLI program)
+obs: If there is no directory, you can generate one with the -r or --reconf flags
+~~~ shell
+   ubuntu@Latitude:~$  mkscript --reconf
+~~~
 
+### DOCS AND MANUALS
+you can find documentation looking at man pages or --help commmand.
+
+~~~ shell
+   man mkscript
+~~~
+### or 
+![mkscript_help](https://github.com/ariDevelops/File-Composer/assets/101485612/e77135ba-df14-48e2-a429-dba051a6b8f8)
 
 
 You can also look for information at:
