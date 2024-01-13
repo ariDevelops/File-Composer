@@ -1,7 +1,4 @@
-# mkscript
-script and source code file manager
-
-## Introduction
+mkscript, FileComposer
 
 I wrote this program with intention of making life easier for programmers 
 who work with many languages and technologies and often forget the
@@ -10,43 +7,40 @@ unique syntax of each one.
 after installing it you can put your scripts inside /yourhome/user/.app-filecomposer
 you will set they as templates for new ones..
 
-## NOTE
+OBS: Do not forget to use one extension per script like: 
+foo.pl, 
+foo.c, 
+foo.lua, foo.sh etc...
+
+
+NOTE
 In future versions I plan to include dependency management for 
 different programming languages...
 
-### Prerequisite
 
-If the installation fails due to lack of internal module dependencies
-you can try to install moose framework through your package manager:
 
-**Debian/Ubuntu** 
-~~~shell
- sudo apt-get update
- sudo apt-get upgrade
- sudo apt-get install -y perl
- sudo apt install libmoose-perl
-~~~	
+INSTALLATION
 
-or 
+To install this module, run the following commands:
 
-**from CPAN client**
-~~~ shell
- cpan -i Moose Carp Term::ANSIColor
-~~~
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
 
-## INSTALLATION
-~~~ shell 
-  ./Preinst.sh
+ **after install run: 
+ $ mkscript --reconf  // This will configure the dot files and default directory for your scripts
+ 
+
+IF YOU ARE INSTALLING FROM GITHUB:
+  ./Preinst
   ./Build
   ./Build test
   ./Build install
-~~~
 
-obs: 
-In case you forgot to run Preinst.sh run:
-$ mkscript --reconf 
 
-## SUPPORT AND DOCUMENTATION
+
+SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the
 perldoc or man command.
@@ -68,4 +62,15 @@ You can also look for information at:
     Search CPAN
         https://metacpan.org/release/App-FileComposer
 	
+    Github
+	https://github.com/ariDevelops
+
+
+LICENSE AND COPYRIGHT
+
+This software is Copyright (c) 2023 by Ariel Vieira.
+
+This is free software, licensed under:
+
+  The GNU General Public License, Version 2, June 1991
 
