@@ -40,7 +40,7 @@ $ mkscript --reconf
 
 ### from cpan 
 ~~~ shell
-   sudo cpan -i App::Filecomposer
+   sudo cpan -i App::FileComposer
 ~~~
 
 
