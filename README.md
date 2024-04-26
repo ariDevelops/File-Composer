@@ -26,7 +26,7 @@ In future versions, I plan to include dependency management for
 different programming languages...
 
 ## INSTALLATION 
-### from git repo
+### compile from source or download the binary debian package from [GitHub releases](https://github.com/ariDevelops/File-Composer/releases/tag/2.0.1)
 ~~~ shell 
   ./Preinst.sh
   ./Build
