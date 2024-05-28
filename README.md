@@ -1,13 +1,13 @@
 ![fcengine](https://github.com/ariDevelops/File-Composer/assets/101485612/9299a0b2-2047-40ab-9903-6299deb19226)
 
-### creates simple predefined templates from a target directory
+### creates simple predefined boilerplates from a target directory
 
 ## Description
 
 
-mkscript is an easy, lightweight, and simple Template engine
+mkscript is an easy, lightweight, and simple Boilerplate engine
 written in Perl, it is easy to customize it by putting your
-own templates inside the engine directory.
+own templates and boilerplates inside the config directory.
 
 In case the directory does not exist, there are options 
 to generate one, or create the new one by hand. 
